@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5.3 -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+
+    <!-- fontawesome 6.3 -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="add-course">
+    <div class="container">
+        <h1>CRUD System</h1>
+        <form action="">
+            <div class="mb-3">
+                <label for="">course name <span class="text-danger">*</span> </label>
+                <input class="inputs form-control" type="text" placeholder="cource name" id="courseName">
+            </div>
+            <label for="">course category</label>
+            <input class="inputs form-control" type="text" placeholder="cource category" id="courseCategory">
+            <label for="">course price</label>
+            <input class="inputs form-control" type="number" placeholder="cource price" id="coursePrice">
+            <label for="">course description</label>
+            <textarea class="inputs form-control" placeholder="course description" id="courseDescription"></textarea>
+            <label for="">course capacity</label>
+            <input class="inputs form-control" type="number" placeholder="cource capacity" id="courseCapacity">
+
+            <input type="submit" value="Add Course" class="btn btn-outline-secondary mt-3" id="click" />
+            <button class="btn btn-outline-secondary mt-3" type="reset" id="resetbtn">clear</button>
+        </form>
+    </div>
+    <div class="container">
+        <input type="search" placeholder="search..." id="search" class="form-control my-3">
+
+        <table class="table table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>capacity</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <button id="deleteBtn" class="btn btn-outline-danger text-center my-3">delete all</button>
+            <tbody id="data">
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <!-- bootstrap 5.3 -->
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
